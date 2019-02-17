@@ -1,0 +1,187 @@
+body {
+  font-family: 'Sarabun', sans-serif;
+}
+
+canvas {
+  position: relative;
+  top: -55px;
+}
+
+.work  {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  margin: 50px auto;
+  max-width: 100%;
+  background-color: #7e95d4;
+  border-radius: 4px;
+}
+
+.work-project {
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: navy 2px solid;
+}
+
+.work-project img {
+  height: 300px;
+  width: 400px;
+}
+
+
+.header {
+  display: flex;
+  background: linear-gradient(130deg, #3c91e7 0, #78378c 100%);
+  overflow: hidden;
+  font-weight: 400;
+  color: white;
+  padding: 5em;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  font-size: 40px;
+  color: white;
+  flex-direction: column;
+}
+
+.connect {
+  display: flex;
+  font-size: 22px;
+  color: white;
+  font-weight: 100;
+  width: 400px;
+}
+
+.github, .twitter {
+  background-color: #7e95d4;
+  padding: 10px 15px;
+  border-radius: 50px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icon {
+  display: flex;
+  margin-right: 8px;
+  align-items: center;
+}
+
+
+.social-icon img {
+  height: 30px;
+  width: 30px;
+}
+
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 80px;
+  order: 2;
+  border: limegreen 3px solid;
+}
+
+
+.image-container img {
+  display: block;
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  position: relative;
+  right: 55px;
+}
+
+main section {
+  padding: 6em 10em;
+}
+
+main section:nth-of-type(odd) {
+    background: #ffffff;
+}
+
+main section:nth-of-type(even) {
+  background: #dee4f0;
+}
+
+section h2 {
+  font-size: 50px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: lime;
+  text-underline-position: under;
+}
+
+
+section h2:hover {
+  text-decoration: underline;
+  text-decoration-color: limegreen;
+  text-underline-position: under;
+}
+
+section p {
+  font-size: 35px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  width: 80%;
+}
+
+.list-left, .list-right {
+  padding: 25px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .header {
+    height: 50vh;
+    flex-direction: column;
+  }
+
+  .image-container {
+    order: 1;
+    margin-left: 0;
+    width: 250px;
+  }
+
+  .image-container img {
+    max-width: 355px;
+  }
+
+  .wrapper {
+    text-align: center;
+    order: 2;
+    font-size: 22px;
+  }
+
+  .connect {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .work-project {
+    margin: 10px;
+  }
+}
