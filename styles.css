@@ -59,7 +59,6 @@ canvas {
   font-weight: 400;
   color: white;
   padding: 5em;
-  height: 40vh;
   justify-content: center;
   align-items: center;
 }
@@ -182,7 +181,6 @@ ul {
 
 @media (max-width: 1200px) {
   .header {
-    height: 50vh;
     flex-direction: column;
   }
 
@@ -253,6 +251,7 @@ ul {
     order: 1;
     margin-left: 0;
     width: 275px;
+    height: 250px;
   }
 
   .image-container img {
