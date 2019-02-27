@@ -145,7 +145,7 @@ li {
 }
 
 main section {
-  padding: 6em 10em;
+  padding: 1em 10em;
 }
 
 main section:nth-of-type(odd) {
@@ -176,7 +176,7 @@ section p {
 }
 
 .quote {
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: slidein;
   font-style: italic;
   color: gray;
@@ -185,7 +185,7 @@ section p {
 
 @keyframes slidein {
   from {
-    margin-left: 10%;
+    margin-left: -2%;
     opacity: 0.5;
     width: 200%; 
   }
@@ -221,6 +221,28 @@ ul {
   width: 100%;
 }
 
+
+.project-header {
+  display: flex;
+  align-items: center;
+}
+
+.project-header img {
+  max-height: 30px;
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.follow-me {
+  display: flex;
+  align-items: center;
+}
+
+.follow-me img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
 
 
 @media (max-width: 1200px) {
@@ -282,7 +304,6 @@ ul {
     font-size: 20px;
     width: 100%;
     width: 80%;
-    padding-left: 10%;
   }
 
   .desc {
@@ -325,21 +346,25 @@ ul {
   }
 
   .list-left {
-    width: 50%;
-    justify-content: flex-start;
-    padding: 0 0 10px 0;
+    width: 100%;
+    justify-content: center;
   }
 
   .list-right {
-    width: 50%;
-    justify-content: flex-start;
+    width: 100%;
+    justify-content: center;
     padding: 0 0 10px 0;
   }
 
   ul {
     margin: 0;
+    text-align: center;
   }
 
+
+  li {
+    justify-content: center;
+  }
 
   .desc {
     font-size: 20px;
