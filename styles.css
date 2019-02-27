@@ -31,6 +31,12 @@ li {
   flex-direction: column;
 }
 
+.company {
+  font-size: 29px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
 .work-project:first-of-type .project-image {
   justify-content: flex-start;
 }
@@ -243,6 +249,7 @@ ul {
   width: 40px;
   margin-right: 10px;
 }
+
 
 
 @media (max-width: 1200px) {
