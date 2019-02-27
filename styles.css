@@ -7,6 +7,21 @@ canvas {
   top: -55px;
 }
 
+
+li {
+  position: relative;
+  display: flex;
+  flex: 1;
+  border: 1px solid #78378c;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+  transition: all 1s ease-in;
+  width: 100%;
+}
+
+
+
 .work  {
   display: flex;
   justify-content: space-around;
@@ -49,6 +64,7 @@ canvas {
 .project-image img {
   height: 300px;
   width: 400px;
+  border-radius: 10px;
 }
 
 
@@ -159,6 +175,28 @@ section p {
   font-size: 35px;
 }
 
+.quote {
+  animation-duration: 1s;
+  animation-name: slidein;
+  font-style: italic;
+  color: gray;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 10%;
+    opacity: 0.5;
+    width: 200%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
 .technologies {
   display: flex;
   justify-content: space-between;
@@ -170,18 +208,25 @@ section p {
 
 ul {
   list-style-type: square;
+  width: 100%
 }
 
-.list-left, .list-right {
+.list-right {
   padding: 25px;
+  width: 100%;
 }
 
+
+.list-left {
+  width: 100%;
+}
 
 
 
 @media (max-width: 1200px) {
   .header {
     flex-direction: column;
+    padding: 1em;
   }
 
   .image-container {
@@ -282,6 +327,7 @@ ul {
   .list-left {
     width: 50%;
     justify-content: flex-start;
+    padding: 0 0 10px 0;
   }
 
   .list-right {
@@ -293,6 +339,7 @@ ul {
   ul {
     margin: 0;
   }
+
 
   .desc {
     font-size: 20px;
