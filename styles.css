@@ -2,78 +2,37 @@ body {
   font-family: 'Sarabun', sans-serif;
 }
 
-canvas {
-  position: relative;
-  top: -55px;
+main section {
+  padding: 1em 10em;
 }
 
-
-li {
-  position: relative;
-  display: flex;
-  flex: 1;
-  border: 1px solid #78378c;
-  margin-bottom: 5px;
-  padding: 10px;
-  text-align: center;
-  transition: all 1s ease-in;
-  width: 100%;
+main section:nth-of-type(odd) {
+    background: #ffffff;
 }
 
-
-
-.work  {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px auto;
-  max-width: 100%;
-  border-radius: 4px;
-  flex-direction: column;
+main section:nth-of-type(even) {
+  background: #dee4f0;
 }
 
-.company {
-  font-size: 29px;
-  font-weight: 500;
-  margin-bottom: 10px;
+section h2 {
+  font-size: 50px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: lime;
+  text-underline-position: under;
 }
 
-.work-project:first-of-type .project-image {
-  justify-content: flex-start;
+section h2:hover {
+  text-decoration: underline;
+  text-decoration-color: limegreen;
+  text-underline-position: under;
 }
 
-.work-project {
-  display: flex;
-  margin: 20px 0;
+section p {
+  font-size: 35px;
 }
 
-.project-image {
-  height: 300px;
-  width: 400px;
-  overflow: hidden;
-  display: flex;
-  flex: 1;
-}
-
-
-.desc {
-  display: flex;
-  order: 1;
-  font-size: 29px;
-  flex: 2;
-  flex-direction: column;
-}
-
-.desc-copy {
-  padding-top: 24px;
-}
-
-.project-image img {
-  height: 300px;
-  width: 400px;
-  border-radius: 10px;
-}
-
-
+/* top banner styles  */
 .header {
   display: flex;
   background: linear-gradient(130deg, #3c91e7 0, #78378c 100%);
@@ -121,12 +80,10 @@ li {
   align-items: center;
 }
 
-
 .social-icon img {
   height: 30px;
   width: 30px;
 }
-
 
 .image-container {
   width: 300px;
@@ -139,7 +96,6 @@ li {
   border: limegreen 3px solid;
 }
 
-
 .image-container img {
   display: block;
   max-width: 400px;
@@ -150,44 +106,13 @@ li {
   right: 55px;
 }
 
-main section {
-  padding: 1em 10em;
-}
-
-main section:nth-of-type(odd) {
-    background: #ffffff;
-}
-
-main section:nth-of-type(even) {
-  background: #dee4f0;
-}
-
-section h2 {
-  font-size: 50px;
-  font-weight: 400;
-  text-decoration: underline;
-  text-decoration-color: lime;
-  text-underline-position: under;
-}
-
-
-section h2:hover {
-  text-decoration: underline;
-  text-decoration-color: limegreen;
-  text-underline-position: under;
-}
-
-section p {
-  font-size: 35px;
-}
-
+/* about me section */
 .quote {
   animation-duration: 2s;
   animation-name: slidein;
   font-style: italic;
   color: gray;
 }
-
 
 @keyframes slidein {
   from {
@@ -202,31 +127,60 @@ section p {
     opacity: 1;
   }
 }
+/*end about me section */
 
-.technologies {
+
+/* work section styles */
+.work  {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 30px;
-  width: 80%;
+  justify-content: space-around;
+  margin: 50px auto;
+  max-width: 100%;
+  border-radius: 4px;
+  flex-direction: column;
 }
 
-
-ul {
-  list-style-type: square;
-  width: 100%
+.company {
+  font-size: 29px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-.list-right {
-  padding: 25px;
-  width: 100%;
+.work-project:first-of-type .project-image {
+  justify-content: flex-start;
 }
 
-
-.list-left {
-  width: 100%;
+.work-project {
+  display: flex;
+  margin: 20px 0;
 }
 
+.project-image {
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+}
+
+.desc {
+  display: flex;
+  order: 1;
+  font-size: 29px;
+  flex: 2;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.desc-copy {
+  padding-top: 24px;
+}
+
+.project-image img {
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+}
 
 .project-header {
   display: flex;
@@ -238,7 +192,46 @@ ul {
   max-width: 40px;
   margin-right: 10px;
 }
+/* end work section */
 
+
+/* technologies section */
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  width: 80%;
+}
+
+ul {
+  list-style-type: square;
+  width: 100%
+}
+
+li {
+  position: relative;
+  display: flex;
+  flex: 1;
+  border: 1px solid #78378c;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+  transition: all 1s ease-in;
+  width: 100%;
+}
+
+.list-right {
+  padding: 25px;
+  width: 100%;
+}
+
+.list-left {
+  width: 100%;
+}
+/*end technologies section */
+
+/* my projects section */
 .follow-me {
   display: flex;
   align-items: center;
@@ -248,11 +241,36 @@ ul {
   height: 40px;
   width: 40px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
+.hundred-days a {
+  cursor: pointer;
+  color: black;
+  text-decoration:none;
+}
+
+.hundred-days a:hover {
+  cursor: pointer;
+  color: rgb(92, 187, 225);
+  text-decoration: underline;
+}
+/* end my projects section */
 
 
 @media (max-width: 1200px) {
+  main section {
+    padding: 10px 30px;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+
+  section p {
+    font-size: 20px;
+  }
+  
   .header {
     flex-direction: column;
     padding: 1em;
@@ -280,10 +298,6 @@ ul {
     justify-content: center;
   }
 
-  main section {
-    padding: 10px 30px;
-  }
-
   .work-project {
     flex-direction: column;
   }
@@ -299,6 +313,22 @@ ul {
     width: 300px;
   }
 
+  .desc {
+    font-size: 20px;
+    display: flex;
+    width: 60%;
+    margin: auto;
+  }
+
+  .technologies {
+    font-size: 20px;
+    width: 100%;
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 700px) {
   section h2 {
     font-size: 30px;
   }
@@ -307,19 +337,6 @@ ul {
     font-size: 20px;
   }
 
-  .technologies {
-    font-size: 20px;
-    width: 100%;
-    width: 80%;
-  }
-
-  .desc {
-    font-size: 20px;
-  }
-}
-
-
-@media (max-width: 700px) {
   .image-container {
     order: 1;
     margin-left: 0;
@@ -335,20 +352,15 @@ ul {
     display: none;
   }
 
-  section h2 {
-    font-size: 30px;
-  }
-
-  section p {
+  .desc {
     font-size: 20px;
+    width: 100%
   }
 
   .technologies {
-    font-size: 20px;
-    width: 100%;
     flex-direction: column;
     display: grid;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
 
@@ -368,13 +380,7 @@ ul {
     text-align: center;
   }
 
-
   li {
     justify-content: center;
   }
-
-  .desc {
-    font-size: 20px;
-  }
-
 }
