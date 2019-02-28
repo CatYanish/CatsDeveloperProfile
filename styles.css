@@ -366,11 +366,13 @@ li {
 
   .list-left {
     width: 100%;
+    display: flex;
     justify-content: center;
   }
 
   .list-right {
     width: 100%;
+    display: flex;
     justify-content: center;
     padding: 0 0 10px 0;
   }
